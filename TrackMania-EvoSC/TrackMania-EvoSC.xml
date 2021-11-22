@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TrackMania-EvoSC</Name>
+  <Repository>evotm/evosc:latest</Repository>
+  <Registry>https://hub.docker.com/r/evotm/evosc</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/EvoTM/docker-trackmania</Project>
+  <Overview/>
+  <Category>GameServers: Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/L4stIdi0t/Unraid-template/main/Templates/Trackmania/logoTM.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1637601641</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/TrackmaniaServer/</HostDir>
+      <ContainerDir>/server/UserData</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/TrackmaniaServer/EvoSC</HostDir>
+      <ContainerDir>/controller/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DB_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RPC_IP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RPC_LOGIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RPC_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="" Mode="" Description="Container Variable: DB_NAME" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_USER" Target="DB_USER" Default="" Mode="" Description="Container Variable: DB_USER" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="Container Variable: DB_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RPC_IP" Target="RPC_IP" Default="trackmania" Mode="" Description="Container Variable: RPC_IP" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RPC_LOGIN" Target="RPC_LOGIN" Default="" Mode="" Description="Container Variable: RPC_LOGIN" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RPC_PASSWORD" Target="RPC_PASSWORD" Default="" Mode="" Description="Container Variable: RPC_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="trackmania server" Target="/server/UserData" Default="/mnt/user/appdata/TrackmaniaServer/" Mode="rw" Description="Container Path: /server/UserData" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/TrackmaniaServer/</Config>
+  <Config Name="EvoSC Data" Target="/controller/" Default="/mnt/user/appdata/TrackmaniaServer/EvoSC" Mode="rw" Description="Container Path: /controller/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/TrackmaniaServer/EvoSC</Config>
+</Container>
