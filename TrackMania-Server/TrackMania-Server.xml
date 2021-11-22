@@ -17,13 +17,29 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1637600685</DateInstalled>
+  <DateInstalled>1637603683</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort>2350</HostPort>
+        <ContainerPort>2350</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>2350</HostPort>
+        <ContainerPort>2350</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5005</HostPort>
+        <ContainerPort>5005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
@@ -34,30 +50,33 @@
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value></Value>
       <Name>MASTER_LOGIN</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value></Value>
       <Name>MASTER_PASSWORD</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>false</Value>
       <Name>XMLRPC_ALLOWREMOTE</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value></Value>
       <Name>FORCE_IP_ADDRESS</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="MASTER_LOGIN" Target="MASTER_LOGIN" Default="" Mode="" Description="Container Variable: MASTER_LOGIN" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="MASTER_PASSWORD" Target="MASTER_PASSWORD" Default="" Mode="" Description="Container Variable: MASTER_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="XMLRPC_ALLOWREMOTE" Target="XMLRPC_ALLOWREMOTE" Default="false" Mode="" Description="Container Variable: XMLRPC_ALLOWREMOTE" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="FORCE_IP_ADDRESS" Target="FORCE_IP_ADDRESS" Default="" Mode="" Description="Container Variable: FORCE_IP_ADDRESS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MASTER_LOGIN" Target="MASTER_LOGIN" Default="" Mode="" Description="Container Variable: MASTER_LOGIN" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MASTER_PASSWORD" Target="MASTER_PASSWORD" Default="" Mode="" Description="Container Variable: MASTER_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="XMLRPC_ALLOWREMOTE" Target="XMLRPC_ALLOWREMOTE" Default="false" Mode="" Description="Container Variable: XMLRPC_ALLOWREMOTE" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="FORCE_IP_ADDRESS" Target="FORCE_IP_ADDRESS" Default="" Mode="" Description="Container Variable: FORCE_IP_ADDRESS" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="ServerData" Target="/server/UserData" Default="/mnt/user/appdata/TrackmaniaServer/" Mode="rw" Description="Container Path: /server/UserData" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/TrackmaniaServer/</Config>
+  <Config Name="Game TCP" Target="2350" Default="2350" Mode="tcp" Description="Container Port: 2350" Type="Port" Display="always" Required="true" Mask="false">2350</Config>
+  <Config Name="Game UDP" Target="2350" Default="2350" Mode="udp" Description="Container Port: 2350" Type="Port" Display="always" Required="true" Mask="false">2350</Config>
+  <Config Name="XMLRPC" Target="5005" Default="5005" Mode="tcp" Description="Container Port: 5005" Type="Port" Display="always" Required="false" Mask="false">5005</Config>
 </Container>
