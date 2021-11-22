@@ -2,13 +2,13 @@
 <Container version="2">
   <Name>TrackMania-Server</Name>
   <Repository>evotm/trackmania:latest</Repository>
-  <Registry>https://hub.docker.com/r/evotm/evosc</Registry>
+  <Registry>https://hub.docker.com/r/evotm/trackmania</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/evotm/evosc</Project>
+  <Project>https://github.com/EvoTM/docker-trackmania</Project>
   <Overview/>
   <Category>GameServers: Status:Stable</Category>
   <WebUI/>
