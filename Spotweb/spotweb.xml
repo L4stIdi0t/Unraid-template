@@ -49,7 +49,7 @@ Depending on what you like, you can mount the /nzb volume and let Spotweb save n
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>1239</HostPort>
+        <HostPort>8080</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -95,7 +95,7 @@ Depending on what you like, you can mount the /nzb volume and let Spotweb save n
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="WebUI port" Target="80" Default="8080" Mode="tcp" Description="The port for the web UI" Type="Port" Display="always" Required="true" Mask="false">1239</Config>
+  <Config Name="WebUI port" Target="80" Default="8080" Mode="tcp" Description="The port for the web UI" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Automated NZB's" Target="/nzb" Default="" Mode="rw" Description="You can mount the /nzb volume and let Spotweb save nzb's to that directory" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="DB_HOST" Target="DB_HOST" Default="mysql" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="true" Mask="false">mysql</Config>
   <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="Container Variable: DB_PORT" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
