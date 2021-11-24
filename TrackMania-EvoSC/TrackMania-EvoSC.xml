@@ -8,8 +8,9 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/EvoTM/docker-trackmania</Project>
-  <Overview>EvoSC for trackmania servers, default configuration is that it works with my trackmania2020 server template.&#xD;
+  <Project>https://github.com/EvoTM/EvoSC</Project>
+  <Overview>A modern server controller for the game Trackmania (TM², 2020).&#xD;
+EvoSC for trackmania servers, default configuration is that it works with my trackmania2020 server template.&#xD;
 &#xD;
 Easiest way to make yourself admin for trackmania2020 is to join the server, then you login your database and go to the Players table. then you change the 3 to 1 behind your name(NOT ID).</Overview>
   <Category>GameServers: Status:Stable</Category>
