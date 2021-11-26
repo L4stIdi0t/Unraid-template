@@ -95,6 +95,7 @@ Depending on what you like, you can mount the /nzb volume and let Spotweb save n
     </Variable>
   </Environment>
   <Labels/>
+  <Requires>MySQL / MariaDB installed</Requires>
   <Config Name="WebUI port" Target="80" Default="8080" Mode="tcp" Description="The port for the web UI" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Automated NZB's" Target="/nzb" Default="" Mode="rw" Description="You can mount the /nzb volume and let Spotweb save nzb's to that directory" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="DB_HOST" Target="DB_HOST" Default="mysql" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="true" Mask="false">mysql</Config>
