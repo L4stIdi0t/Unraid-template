@@ -1,26 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>ArchiSteamFarm</Name>
-  <Repository>justarchi/archisteamfarm</Repository>
+  <Repository>justarchi/archisteamfarm:latest</Repository>
   <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
-  <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>Recommended, self updating, stable</TagDescription>
-    <Repository>justarchi/archisteamfarm:latest</Repository>
-    <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
-  </Branch>
-  <Branch>
-    <Tag>main</Tag>
-    <TagDescription>Not recommended, every commit will be applied</TagDescription>
-    <Repository>justarchi/archisteamfarm:main</Repository>
-    <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
-  </Branch>
-  <Branch>
-    <Tag>released</Tag>
-    <TagDescription>Not recommended, every release including pre releases</TagDescription>
-    <Repository>justarchi/archisteamfarm:released</Repository>
-    <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
-  </Branch>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -40,7 +22,7 @@ Today, ASF is one of the most versatile Steam power tools, allowing you to make 
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639242685</DateInstalled>
+  <DateInstalled>1639263687</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Check out the wiki for making config files for your steam account.&#xD;
@@ -61,13 +43,25 @@ Today, ASF is one of the most versatile Steam power tools, allowing you to make 
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/ASF</HostDir>
+      <HostDir>/mnt/user/appdata/ASF/config</HostDir>
       <ContainerDir>/app/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ASF/plugins</HostDir>
+      <ContainerDir>/app/plugins</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ASF/logs</HostDir>
+      <ContainerDir>/app/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
   <Config Name="WebUI" Target="1242" Default="1242" Mode="tcp" Description="By default IPC uses 1242" Type="Port" Display="always" Required="true" Mask="false">1242</Config>
-  <Config Name="Appdata" Target="/app/config" Default="" Mode="rw" Description="Place the ASF.json and other files here" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ASF</Config>
+  <Config Name="Appdata" Target="/app/config" Default="" Mode="rw" Description="Place the ASF.json and other files here" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ASF/config</Config>
+  <Config Name="Plugins" Target="/app/plugins" Default="/mnt/user/appdata/ASF/plugins" Mode="rw" Description="Place your plugin files here, it is safe to remove" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ASF/plugins</Config>
+  <Config Name="Logs" Target="/app/logs" Default="/mnt/user/appdata/ASF/logs" Mode="rw" Description="Logs will be stored here, it is safe to remove" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ASF/logs</Config>
 </Container>
