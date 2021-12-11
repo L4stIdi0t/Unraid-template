@@ -11,7 +11,7 @@
   <Project>https://github.com/spotweb/spotweb</Project>
   <Overview>Spotweb is a decentralized usenet community based on the Spotnet protocol.&#xD;
 &#xD;
-The only required manual configuration is setting up a valid usenet server(besides having an external mysql)&#xD;
+The only required manual configuration is setting up a valid usenet server&#xD;
 &#xD;
 Spotweb is configured as an open system after running docker-compose up, so everyone who can access can register an account (keep this in mind)&#xD;
 &#xD;
