@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ArchiSteamFarm</Name>
+  <Repository>justarchi/archisteamfarm</Repository>
+  <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Recommended, self updating, stable</TagDescription>
+    <Repository>justarchi/archisteamfarm:latest</Repository>
+    <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
+  </Branch>
+  <Branch>
+    <Tag>main</Tag>
+    <TagDescription>Not recommended, every commit will be applied</TagDescription>
+    <Repository>justarchi/archisteamfarm:main</Repository>
+    <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
+  </Branch>
+  <Branch>
+    <Tag>released</Tag>
+    <TagDescription>Not recommended, every release including pre releases</TagDescription>
+    <Repository>justarchi/archisteamfarm:released</Repository>
+    <Registry>https://hub.docker.com/r/justarchi/archisteamfarm</Registry>
+  </Branch>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/JustArchiNET/ArchiSteamFarm</Project>
+  <Overview>Check out the wiki for making config files for your steam account.&#xD;
+https://github.com/JustArchiNET/ArchiSteamFarm/wiki&#xD;
+&#xD;
+ASF is a C# application with primary purpose of idling Steam cards from multiple accounts simultaneously. Unlike Idle Master which works only for one account at given time, while requiring Steam client running in the background and launching additional processes imitating "game playing" status, ASF doesn't require any Steam client running in the background, doesn't launch any additional processes and is made to handle unlimited Steam accounts at once. In addition to that, it's meant to be run on servers or other desktop-less machines, and features full cross-OS support, which makes it possible to launch on any operating system with .NET Core runtime, such as Windows, Linux and OS X. ASF is possible thanks to gigantic amount of work done in marvelous SteamKit2 library.&#xD;
+&#xD;
+Today, ASF is one of the most versatile Steam power tools, allowing you to make use of many features that were implemented over time. Apart from idling Steam cards, which remains the primary focus, ASF includes bunch of features on its own, such as a possibility to use it as Steam authenticator or chat logger. In addition to that, ASF includes plugin system, thanks to which anybody can further extend it to his/her needs.</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:1242]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/JustArchiNET/ArchiSteamFarm/5.2.0.10/resources/ASF_512x512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639242685</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Check out the wiki for making config files for your steam account.&#xD;
+https://github.com/JustArchiNET/ArchiSteamFarm/wiki&#xD;
+&#xD;
+ASF is a C# application with primary purpose of idling Steam cards from multiple accounts simultaneously. Unlike Idle Master which works only for one account at given time, while requiring Steam client running in the background and launching additional processes imitating "game playing" status, ASF doesn't require any Steam client running in the background, doesn't launch any additional processes and is made to handle unlimited Steam accounts at once. In addition to that, it's meant to be run on servers or other desktop-less machines, and features full cross-OS support, which makes it possible to launch on any operating system with .NET Core runtime, such as Windows, Linux and OS X. ASF is possible thanks to gigantic amount of work done in marvelous SteamKit2 library.&#xD;
+&#xD;
+Today, ASF is one of the most versatile Steam power tools, allowing you to make use of many features that were implemented over time. Apart from idling Steam cards, which remains the primary focus, ASF includes bunch of features on its own, such as a possibility to use it as Steam authenticator or chat logger. In addition to that, ASF includes plugin system, thanks to which anybody can further extend it to his/her needs.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1242</HostPort>
+        <ContainerPort>1242</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ASF</HostDir>
+      <ContainerDir>/app/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="1242" Default="1242" Mode="tcp" Description="By default IPC uses 1242" Type="Port" Display="always" Required="true" Mask="false">1242</Config>
+  <Config Name="Appdata" Target="/app/config" Default="" Mode="rw" Description="Place the ASF.json and other files here" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ASF</Config>
+</Container>
