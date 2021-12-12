@@ -11,7 +11,7 @@
   <Project>https://github.com/spotweb/spotweb</Project>
   <Overview>Spotweb is a decentralized usenet community based on the Spotnet protocol.&#xD;
 &#xD;
-The only required manual configuration is setting up a valid usenet server&#xD;
+The only required manual configuration is setting up a valid usenet server. You can follow this https://github.com/L4stIdi0t/Unraid-template/blob/master/Spotweb/write-up-spotweb.md &#xD;
 &#xD;
 Spotweb is configured as an open system after running docker-compose up, so everyone who can access can register an account (keep this in mind)&#xD;
 &#xD;
@@ -34,7 +34,7 @@ Depending on what you like, you can mount the /nzb volume and let Spotweb save n
   <DonateLink/>
   <Description>Spotweb is a decentralized usenet community based on the Spotnet protocol.&#xD;
 &#xD;
-The only required manual configuration is setting up a valid usenet server&#xD;
+The only required manual configuration is setting up a valid usenet server. You can follow this https://github.com/L4stIdi0t/Unraid-template/blob/master/Spotweb/write-up-spotweb.md &#xD;
 &#xD;
 Spotweb is configured as an open system after running docker-compose up, so everyone who can access can register an account (keep this in mind)&#xD;
 &#xD;
