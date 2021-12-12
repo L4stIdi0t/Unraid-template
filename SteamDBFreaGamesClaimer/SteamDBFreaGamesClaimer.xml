@@ -41,7 +41,7 @@ https://github.com/azhuge233/SteamDB-FreeGames-dotnet/blob/master/Things%20shoul
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/SteamDBFreeGamesClaimer/db</HostDir>
+      <HostDir>/mnt/user/appdata/SteamDBFreeGamesClaimer</HostDir>
       <ContainerDir>/home/wd</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -51,5 +51,5 @@ https://github.com/azhuge233/SteamDB-FreeGames-dotnet/blob/master/Things%20shoul
   <Requires>ASF installed with IPC acces&#xD;
     A valid config file(read the description)
   </Requires>
-  <Config Name="STEAM_DB_FOLDER_NAME" Target="/home/wd" Default="/mnt/user/appdata/SteamDBFreeGamesClaimer/db" Mode="rw" Description="Container Path: /home/wd" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/SteamDBFreeGamesClaimer/db</Config>
+  <Config Name="STEAM_DB_FOLDER_NAME" Target="/home/wd" Default="/mnt/user/appdata/SteamDBFreeGamesClaimer" Mode="rw" Description="Container Path: /home/wd" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/SteamDBFreeGamesClaimer</Config>
 </Container>
