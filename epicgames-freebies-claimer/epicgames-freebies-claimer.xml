@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>epicgames-freebies-claimer</Name>
+  <Repository>ghcr.io/jackblk/epicgames-freebies-claimer:latest</Repository>
+  <Registry>https://hub.docker.com/r/jackblk/epicgames-freebies-claimer</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Revadike/epicgames-freebies-claimer</Project>
+  <Overview>Claim available free game promotions from the Epic Games Store.&#xD;
+&#xD;
+Currently not working anymore, see https://github.com/Revadike/epicgames-freebies-claimer/pull/184&#xD;
+&#xD;
+Default config.json:&#xD;
+https://raw.githubusercontent.com/Revadike/epicgames-freebies-claimer/master/data/config.example.json&#xD;
+Application for device_auths.json:&#xD;
+https://github.com/jackblk/DeviceAuthGenerator/releases&#xD;
+&#xD;
+Explanation:&#xD;
+https://github.com/Revadike/epicgames-freebies-claimer/wiki/User-Guide-(Docker)#export-your-epicgames-secrets</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/L4stIdi0t/Unraid-template/master/epicgames-freebies-claimer/epicgames.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1642424884</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Claim available free game promotions from the Epic Games Store.&#xD;
+&#xD;
+Currently not working anymore, see https://github.com/Revadike/epicgames-freebies-claimer/pull/184&#xD;
+&#xD;
+Default config.json:&#xD;
+https://raw.githubusercontent.com/Revadike/epicgames-freebies-claimer/master/data/config.example.json&#xD;
+Application for device_auths.json:&#xD;
+https://github.com/jackblk/DeviceAuthGenerator/releases&#xD;
+&#xD;
+Explanation:&#xD;
+https://github.com/Revadike/epicgames-freebies-claimer/wiki/User-Guide-(Docker)#export-your-epicgames-secrets</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/epicgames-freebies-claimer/data</HostDir>
+      <ContainerDir>/app/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Requires>Custom generated config.json and device_auths.json (See Description)</Requires>
+  <Config Name="Appdata" Target="/app/data" Default="" Mode="rw" Description="Place in this folder your config.json &amp;amp; device_auths.json" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/epicgames-freebies-claimer/data</Config>
+</Container>
