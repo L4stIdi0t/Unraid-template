@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Collabora-CODE</Name>
+  <Repository>collabora/code</Repository>
+  <Registry>https://hub.docker.com/r/collabora/code/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://sdk.collaboraonline.com/docs/installation/CODE_Docker_image.html</Project>
+  <Overview>Updated to not use domain enviroment variable&#xD;
+Collabora/Code Online Development Edition - an awesome, Online Office suite image suitable for home use. You can use Collabora/Code for your Nextcloud an edit your Office Documents Online!</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>https://[IP]:[PORT:9980]/browser/dist/admin/admin.html</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/Collabora.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/collabora.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1651950716</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Updated to not use domain enviroment variable&#xD;
+Collabora/Code Online Development Edition - an awesome, Online Office suite image suitable for home use. You can use Collabora/Code for your Nextcloud an edit your Office Documents Online!</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9980</HostPort>
+        <ContainerPort>9980</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>admin</Value>
+      <Name>username</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>yourpassword</Value>
+      <Name>password</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru</Value>
+      <Name>dictionaries</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="9980" Default="" Mode="tcp" Description="Container Port: 9980" Type="Port" Display="always" Required="false" Mask="false">9980</Config>
+  <Config Name="Username" Target="username" Default="" Mode="" Description="Container Variable: username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Password" Target="password" Default="" Mode="" Description="Container Variable: password" Type="Variable" Display="always" Required="false" Mask="false">yourpassword</Config>
+  <Config Name="Spelling dictionaries" Target="dictionaries" Default="de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru" Mode="" Description="By default only limited set of spelling dictionaries and thesauri are configured for CODE, mainly for performance reasons." Type="Variable" Display="always" Required="false" Mask="false">de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru</Config>
+</Container>
