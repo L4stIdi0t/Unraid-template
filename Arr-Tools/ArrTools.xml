@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>Arr-Tools</Name>
-    <Repository>ghcr.io/mah-thingies/arr-tools/main:latest</Repository>
-    <Registry>https://github.com/users/mah-thingies/packages/container/package/arr-tools%2Fmain</Registry>
-    <Network>bridge</Network>
-    <MyIP/>
-    <Shell>sh</Shell>
-    <Privileged>false</Privileged>
-    <Support/>
-    <Project>https://github.com/mah-thingies/arr-tools</Project>
-    <Overview>Tools that I use to manage my media library. Main tools are Dynarr and Swipearr. But there are more tools which are unlisted here.&#xD;
-        Dynarr being a tool which automatically manages files and quality of files based on settings&#xD;
-        Swipearr is a Tinder like interface to go through the items that are in your *Arr instances</Overview>
-    <Category>Tools:</Category>
-    <WebUI>http://[IP]:[PORT:9000]</WebUI>
-    <TemplateURL/>
-    <Icon>https://raw.githubusercontent.com/mah-thingies/arr-tools/main/src/frontend/public/android-chrome-192x192.png</Icon>
-    <ExtraParams/>
-    <PostArgs/>
-    <CPUset/>
-    <DateInstalled>1721635883</DateInstalled>
-    <DonateText/>
-    <DonateLink/>
-    <Requires/>
-    <Config Name="WebUI" Target="9000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
-    <Config Name="Persistent data" Target="/app/backend/data" Default="/mnt/user/appdata/arr-tools" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Name>Arr-Tools-main</Name>
+  <Repository>ghcr.io/l4stidi0t/arr-tools/main:latest</Repository>
+  <Registry>https://github.com/L4stIdi0t?tab=packages&amp;amp;repo_name=arr-tools</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/L4stIdi0t/arr-tools</Project>
+  <Overview>Tools that I use to manage my media library. Main tools are Dynarr and Swipearr. But there are more tools which are unlisted here.&#xD;
+Dynarr being a tool which automatically manages files and quality of files based on settings&#xD;
+Swipearr is a Tinder like interface to go through the items that are in your *Arr instances</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/l4stidi0t/arr-tools/main/src/frontend/public/android-chrome-192x192.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1722880402</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="9000" Default="9000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Persistent data" Target="/app/backend/data" Default="/mnt/user/appdata/arr-tools" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
