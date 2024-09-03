@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support/>
   <Project>https://sdk.collaboraonline.com/docs/installation/CODE_Docker_image.html</Project>
   <Overview>Updated to not use domain enviroment variable&#xD;
