@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TrackMania-EvoSC</Name>
-  <Repository>evotm/evosc:latest</Repository>
-  <Registry>https://hub.docker.com/r/evotm/evosc</Registry>
+  <Repository>evoesports/evosc:latest</Repository>
+  <Registry>https://hub.docker.com/r/evoesports/evosc</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/EvoTM/EvoSC</Project>
+  <Project>https://github.com/EvoEsports/EvoSC</Project>
   <Overview>A modern server controller for the game Trackmania (TM², 2020).&#xD;
 EvoSC for trackmania servers, default configuration is that it works with my trackmania2020 server template.&#xD;
 &#xD;
