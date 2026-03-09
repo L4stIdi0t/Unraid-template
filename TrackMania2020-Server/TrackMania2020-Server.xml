@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>TrackMania2020-Server</Name>
-  <Repository>evotm/trackmania:latest</Repository>
-  <Registry>https://hub.docker.com/r/evotm/trackmania</Registry>
+  <Repository>evoesports/trackmania:latest</Repository>
+  <Registry>https://hub.docker.com/r/evoesports/trackmania</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/EvoTM/docker-trackmania</Project>
+  <Project>https://github.com/EvoEsports/docker-trackmania</Project>
   <Overview>This will run a TrackMania 2020 server. You can also install the EvoSC to get an admin interface in the game.&#xD;
 Create an account here https://players.trackmania.com/server/dedicated/create</Overview>
   <Category>GameServers: Status:Stable</Category>
